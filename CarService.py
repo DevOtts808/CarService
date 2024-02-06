@@ -7,37 +7,6 @@ class Garage:
         self.postCode = postCode
         self.phoneNo = phoneNo
 
-
-def addGarage():
-    namesOfGarages = []
-    garageID = input("Input garage id:")
-    garageName = input("Input garage name:")
-    address = input("Input garage address:")
-    town = input("Input garage town:")
-    postCode = input("Input garage postcode:")
-    phoneNo = input("Input garage phone number:")
-
-    garageOne = Garage(garageID, garageName, address, town, postCode, phoneNo)
-    namesOfGarages.append(garageOne.__dict__)
-    print(namesOfGarages)
-
-    garageID = input("Input garage id:")
-    garageName = input("Input garage name:")
-    address = input("Input garage address:")
-    town = input("Input garage town:")
-    postCode = input("Input garage postcode:")
-    phoneNo = input("Input garage phone number:")
-
-    garageTwo = Garage(garageID, garageName, address, town, postCode, phoneNo)
-    namesOfGarages.append(garageTwo.__dict__)
-    databaseNum = input("what databse number")
-
-    print(namesOfGarages[databaseNum])
-
-
-addGarage()
-
-
 class Job:
     def __init__(self, jobID, carRegNo, garageID, datein, dateout, cost):
         self.jobID = jobID
